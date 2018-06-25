@@ -9,15 +9,15 @@
 
   <remote  name="bootleg"
            fetch="https://github.com/BootleggersROM"
-           revision="oreo.1" />
+           revision="oreo.1-gsi" />
 
   <remote  name="bootleg-backup"
            fetch="https://gitlab.com/Bootleggers-BrokenLab"
-           revision="oreo.1" />
+           revision="oreo.1-gsi" />
 
   <remote  name="bootleg-dev"
            fetch="https://github.com/BootleggersROM-Devices"
-           revision="oreo.1" />
+           revision="oreo.1-gsi" />
 
   <default revision="8.1"
            remote="gzosp"
@@ -43,7 +43,7 @@
   </project>
 
   <project path="bionic" name="bionic" groups="pdk" remote="gzosp" />
-  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="gzosp" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="bootleg" />
   <project path="development" name="development" groups="pdk-cw-fs,pdk-fs" remote="bootleg" />
   <project path="device/gzosp/sepolicy" name="device_gzosp_sepolicy" remote="bootleg" revision="oreo.1-gsi" />
   <project path="external/chromium-webview" name="external_chromium-webview" groups="pdk" clone-depth="1" remote="gzosp" />
@@ -79,7 +79,7 @@
   <project path="hardware/libhardware" name="hardware_libhardware" remote="gzosp" />
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" remote="gzosp" />
   <project path="hardware/qcom/bootctrl" name="hardware_qcom_bootctrl" groups="pdk" remote="gzosp" />
-  <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="gzosp" />
+  <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="bootleg" />
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="gzosp" />
   <project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" groups="pdk-cw-fs,pdk-fs" remote="bootleg" revision="oreo.1"/>
   <project path="packages/apps/BootlegOTA" name="packages_apps_BootlegOTA" groups="pdk-cw-fs,pdk-fs" remote="bootleg" revision="oreo.1"/>
