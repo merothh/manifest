@@ -5,6 +5,11 @@ As always repo init, ser.
 
 	repo init -u https://github.com/BootleggersROM/manifest.git -b oreo.1-gsi
 
+And also sync, milord.
+
+	repo sync -f --force-sync --no-clone-bundle -jx
+        (the x on jx it's the amount of cores you have)
+
 Since we're lazy people, we've done a buildscript named bootleg.sh (you'll find it after sync) to ease the build process.
 Here's the usage help:
 
