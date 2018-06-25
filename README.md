@@ -1,34 +1,16 @@
 Bootleggers ROM | 8.1 Sources
 ========
 
-To initialize your local repository, use this command:
+Since we're lazy people, we've done a buildscript named bootleg.sh (you'll find it after sync) to ease the build process.
+Here's the usage help:
 
-	repo init -u https://github.com/BootleggersROM/manifest.git -b oreo.1
+	"Usage: ./bootleg.sh <android-8.1> bootleg '# of jobs' 'version' "
+	"*version examples"
+	"*arm64-aonly"
+	"*arm64-ab"
 
-Then, be sure to add your device manifest in your local_manifests folder and finally, do:
-
-	repo sync -f --force-sync --no-clone-bundle -jx
-	(the x on jx it's the amount of cores you have)
-
-Also, just in case something went wrong for our side, or from your manifest or whatever, just add a `-q` in your repo sync command to see less lines and get into the issue more easily.
-
-When everything is done, be sure to shishufy your device (prepare it with the bootleg.mk file and bootleg_device product and stuff, that generic thing) and then when you're ready you can:
-
-	source build/envsetup.sh
-	brunch device
-	
-	(where it says device, it's your device codename)
-
-Sidenote: You can use `brunch device` or use the following commands too.
-
-	source build/envsetup.sh
-	lunch bootleg_device-userdebug
-	mka bacon -jxxxxx
-	
-	(where it says device, it's your device codename. And you can use mka bacon or mka bootleg, it's all up to you.)
-
-
-Also, as another sidenote: This is explained on the updater-script but just to clarify: Unshishufied builds are UNOFFICIAL.
+If you don't wanna use it, meh, you're on your own and we'll blame you for any derp. 
+But if you do intersting stuff, PLOX, PR ser.
 
 
 Help from other devices
@@ -61,6 +43,7 @@ Here's my thanks to people who made this possible:
 * CypherOS
 * PureKat
 * theimpulson
+* Dil3mm4
 
 Help the GZOSP Guys
 -------------------
