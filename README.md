@@ -1,6 +1,10 @@
 Bootleggers ROM | 8.1 Sources
 ========
 
+As always repo init, ser.
+
+	repo init -u https://github.com/BootleggersROM/manifest.git -b oreo.1-gsi
+
 Since we're lazy people, we've done a buildscript named bootleg.sh (you'll find it after sync) to ease the build process.
 Here's the usage help:
 
