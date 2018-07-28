@@ -21,14 +21,17 @@
   <remote  name="bootleg-dev"
            fetch="https://github.com/BootleggersROM-Devices"
            revision="oreo.1" />
-
+  <remote  name="phh"
+	   fetch="https://github.com/phhusson"/>
   <default revision="8.1"
            remote="gzosp"
            sync-f="true"
            sync-c="true"
            sync-j="8" />
 
- 
+  <!-- GAppsGo -->
+  <project path="vendor/gapps-go" name="gapps-go" revision="master" remote="phh" />
+
   <!-- OpenGApps -->
   <project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
   <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
